@@ -7,9 +7,11 @@
 <ul>
     <% skills.forEach(skill => { %>
         <li>
-        <%= skill.name %>
+        <a href="/skills/<%= skill.id%>"> <%= skill.name %></a>
         </li>
     <% }) %>
 </ul>
+
+<a href="/skills/new"><button>Add Skill</button></a>
 
 <%- include('../partials/close') %>

@@ -1,2 +1,22 @@
 <h3> <%= skill.name %></h3>
 <p> <%= skill.description %> </p>
+
+
+<!-- edit -->
+<a href="/skills/<%= skill.id %>/edit">
+    <button>Edit</button>
+</a>
+<!-- <form 
+    action="/skills/<%= skill.id%>?_method=PUT"
+    method="POST"
+>
+    <button type="submit">Edit</button>
+</form> -->
+
+<!-- delete -->
+<form 
+    action="/skills/<%= skill.id %>?_method=DELETE"
+    method="POST"
+>
+    <button type="submit">Delete</button>
+</form>
